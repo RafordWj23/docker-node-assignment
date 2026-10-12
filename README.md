@@ -96,3 +96,6 @@ docker-assignment/
 ```
 
 Good luck with your Docker containerization!
+
+## Screen shots
+![Home page](home.png) and ![API status](status.png)
