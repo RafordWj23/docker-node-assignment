@@ -53,6 +53,10 @@ docker run -d -p 3000:3000 my-node-app
 ## Reflection Question
 **Answer the following question in the space below**: How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized?
 
+Docker containers and virtual machines both isolate applications, but they work differently. A VM runs a full guest operating system on top of a hypervisor, which uses a lot of memory and storage and can take minutes to start. A container shares the host’s operating system kernel and packages only the app and its dependencies, so it is much lighter and starts in seconds.
+A development team might choose Docker over VMs for an app like this one because containers run the same way on every machine, which avoids “it works on my machine” problems. This app ran without Node.js installed on my computer because the container included its own runtime. Containers also use fewer resources and are quick to start, stop, and delete, which makes them a good fit for automated deployment.
+
+
 
 
 ## Application Requirements for Docker
